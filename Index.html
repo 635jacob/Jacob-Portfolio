@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacobfolio | Premium Personal Portfolio</title>
+    <meta name="description" content="A futuristic cyberpunk personal portfolio with neon glassmorphism, animated sections, and premium UI." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="page-shell">
+      <div class="loading-screen" id="loadingScreen">
+        <div class="loading-card">
+          <div class="logo-ring">J</div>
+          <h1 class="loading-name" id="loadingName">JACOB GUZON</h1>
+          <p class="loading-subtitle">IT Student • Web & Creative Design</p>
+          <div class="progress-wrap">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <div class="percent" id="progressText">0%</div>
+          <div class="loading-dots"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+
+      <header class="topbar" id="topbar">
+        <nav class="nav container">
+          <a class="brand" href="#home">Jacob<span>folio</span></a>
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="container hero-grid">
+            <article class="hero-copy" data-aos="fade-right">
+              <p class="eyebrow">IT Student Portfolio</p>
+              <h1>Hi, I'm <span>Jacob Guzon</span></h1>
+              <p class="typed-line"><span class="typed-text" id="typedText"></span><span class="cursor">|</span></p>
+              <p class="intro">I’m an IT student learning the basics of web development and design. I enjoy creating clean websites with HTML, CSS, JavaScript, Python, C++, Figma, and Photoshop.</p>
+              <div class="cta-group">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-secondary" href="#contact">Contact Me</a>
+              </div>
+              <ul class="mini-stats">
+                <li><strong>5+</strong> Years Crafting Digital Products</li>
+                <li><strong>30+</strong> Launches Across Web & UI</li>
+                <li><strong>100%</strong> Focus on Performance</li>
+              </ul>
+            </article>
+
+            <aside class="hero-visual" data-aos="fade-left">
+              <div class="avatar-shell">
+                <div class="avatar-orb orb-one"></div>
+                <div class="avatar-orb orb-two"></div>
+                <div class="avatar-card">
+                  <div class="avatar-badge">IT Student • Web Basics</div>
+                  <div class="avatar-face">JG</div>
+                  <p>HTML • CSS • JavaScript • Python • C++ • Figma • Photoshop</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="particles" aria-hidden="true"></div>
+        </section>
+
+        <section class="section about" id="about">
+          <div class="container section-heading" data-aos="fade-up">
+            <p class="eyebrow">About Me</p>
+            <h2>Designing premium digital experiences with a cinematic edge.</h2>
+          </div>
+          <div class="container about-grid">
+            <article class="glass-card profile-card" data-aos="fade-up">
+              <div class="profile-photo">JG</div>
+              <h3>IT Student & Aspiring Web Creator</h3>
+              <p>I’m currently studying IT and building my skills in creating simple, modern, and functional websites using HTML, CSS, JavaScript, Python, Figma, and Photoshop.</p>
+            </article>
+            <article class="glass-card stat-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="stat-box"><strong>Practice</strong><span>Creating simple and clean websites</span></div>
+              <div class="stat-box"><strong>Learning</strong><span>HTML, CSS, JavaScript, Python, Figma, Photoshop</span></div>
+              <div class="stat-box"><strong>Focus</strong><span>Improving my skills in web design and development</span></div>
+            </article>
+            <article class="glass-card timeline-card" data-aos="fade-up" data-aos-delay="150">
+              <h3>Experience Timeline</h3>
+              <ul class="timeline">
+                <li><span>2024</span><strong>Practicing basic web creation</strong></li>
+                <li><span>2025</span><strong>Improving HTML, CSS, JavaScript, and Python skills</strong></li>
+                <li><span>2026</span><strong>Continuing design and web development practice</strong></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section skills" id="skills">
+          <div class="container section-heading" data-aos="fade-up">
+            <p class="eyebrow">Skills</p>
+            <h2>Modern skill stack with neon precision.</h2>
+          </div>
+          <div class="container skill-grid">
+            <article class="glass-card skill-card" data-aos="fade-up"><h3>Frontend</h3><p>HTML, CSS, JavaScript, and basic web design</p><div class="bar"><span style="--pct: 82%"></span></div></article>
+            <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="80"><h3>Programming</h3><p>Python basics and simple logic building</p><div class="bar"><span style="--pct: 74%"></span></div></article>
+            <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="150"><h3>Design</h3><p>Figma and Photoshop for creative layouts and visuals</p><div class="bar"><span style="--pct: 78%"></span></div></article>
+            <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="220"><h3>Learning Focus</h3><p>Improving web studies, design thinking, and project creation</p><div class="bar"><span style="--pct: 86%"></span></div></article>
+          </div>
+        </section>
+
+        <section class="section projects" id="projects">
+          <div class="container section-heading" data-aos="fade-up">
+            <p class="eyebrow">Projects</p>
+            <h2>Premium project showcase with futuristic details.</h2>
+          </div>
+          <div class="container filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX</button>
+            <button class="filter-btn" data-filter="motion">Motion</button>
+          </div>
+          <div class="container project-grid">
+            <article class="glass-card project-card" data-category="frontend" data-aos="fade-up"><h3>Nova Commerce</h3><p>High-converting storefront with neon visuals and interactive cart flow.</p><div class="project-links"><a href="#" class="chip">Live Demo</a><a href="#" class="chip">GitHub</a></div></article>
+            <article class="glass-card project-card" data-category="uiux" data-aos="fade-up" data-aos-delay="80"><h3>Pulse Dashboard</h3><p>Enterprise analytics dashboard with glassmorphic panels and glowing charts.</p><div class="project-links"><a href="#" class="chip">Live Demo</a><a href="#" class="chip">GitHub</a></div></article>
+            <article class="glass-card project-card" data-category="motion" data-aos="fade-up" data-aos-delay="150"><h3>Orbit Studio</h3><p>Interactive studio site with cinematic transitions, micro-animations, and rich storytelling.</p><div class="project-links"><a href="#" class="chip">Live Demo</a><a href="#" class="chip">GitHub</a></div></article>
+          </div>
+        </section>
+
+        <section class="section services" id="services">
+          <div class="container section-heading" data-aos="fade-up">
+            <p class="eyebrow">Services</p>
+            <h2>Luxury-grade web experiences tailored to your brand.</h2>
+          </div>
+          <div class="container service-grid">
+            <article class="glass-card service-card" data-aos="fade-up"><i class="fa-solid fa-code"></i><h3>Frontend Development</h3><p>Pixel-perfect interfaces, responsive architecture, and smooth motion systems.</p></article>
+            <article class="glass-card service-card" data-aos="fade-up" data-aos-delay="80"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>UI/UX Design</h3><p>High-end visual systems, premium interaction design, and elegant user flows.</p></article>
+            <article class="glass-card service-card" data-aos="fade-up" data-aos-delay="150"><i class="fa-solid fa-rocket"></i><h3>Launch Optimization</h3><p>Fast page performance, accessibility, analytics, and conversion-ready polish.</p></article>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="container contact-grid">
+            <article class="glass-card contact-copy" data-aos="fade-right">
+              <p class="eyebrow">Contact</p>
+              <h2>Let's create a stunning launch.</h2>
+              <p>Whether you need a simple portfolio, student project page, or a modern web design, I’m learning to build creative digital experiences with passion and consistency.</p>
+              <p class="contact-number">Contact: 09708936416</p>
+              <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </article>
+            <article class="glass-card form-card" data-aos="fade-left">
+              <form id="contactForm" class="contact-form">
+                <label>Name<input type="text" placeholder="Your name" required /></label>
+                <label>Email<input type="email" placeholder="you@example.com" required /></label>
+                <label>Message<textarea rows="5" placeholder="Tell me about your project" required></textarea></label>
+                <button type="submit" class="btn btn-primary send-btn">Send Message</button>
+              </form>
+              <p id="formStatus" class="form-status">Thanks! Your message is ready.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
